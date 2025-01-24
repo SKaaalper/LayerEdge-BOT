@@ -5,9 +5,9 @@ import { getBanner } from "./config/banner.js";
 import { colors } from "./config/colors.js";
 
 const CONFIG = {
-  PING_INTERVAL: 0.5,
+  PING_INTERVAL: 0.5, // Default is 0.5 minute (30 seconds)
   get PING_INTERVAL_MS() {
-    return this.PING_INTERVAL * 60 * 1000;
+    return this.PING_INTERVAL * 60 * 1000; // Convert to milliseconds
   },
 };
 
