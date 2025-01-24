@@ -147,7 +147,7 @@ class WalletDashboard {
         stats.error = error.message;
       }
       this.renderDashboard();
-    }, CONFIG.PING_INTERVAL_MS);
+    }, CONFIG.PING_INTERVAL_MS); // 30 seconds interval
 
     this.pingIntervals.set(wallet, pingInterval);
     this.renderDashboard();
